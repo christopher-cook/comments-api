@@ -55,20 +55,20 @@ public class CommentControllerTest {
 
     }
 
-    @Test
-    public void createComment_NewComment_Success() throws Exception {
-
-        RequestBuilder requestBuilder = MockMvcRequestBuilders.post("/comment/1")
-                .contentType(MediaType.APPLICATION_JSON).content(createJson("comment"));
-
-            when(commentService.createComment(anyString(), anyString(), any())).thenReturn(comment);
-
-
-        MvcResult result = mockMvc.perform(requestBuilder).andExpect(status().isOk())
-                .andExpect(content().json("{\"commentId\":3,\"text\":\"test text\"}")).andReturn();
-        System.out.println(requestBuilder);
-        System.out.println(result.getResponse().getContentAsString());
-    }
+//    @Test
+//    public void createComment_NewComment_Success() throws Exception {
+//
+//        RequestBuilder requestBuilder = MockMvcRequestBuilders.post("/comment/1")
+//                .contentType(MediaType.APPLICATION_JSON).content(createJson("comment"));
+//
+//            when(commentService.createComment(anyString(), anyString(), any())).thenReturn(comment);
+//
+//
+//        MvcResult result = mockMvc.perform(requestBuilder).andExpect(status().isOk())
+//                .andExpect(content().json("{\"commentId\":3,\"text\":\"test text\"}")).andReturn();
+//        System.out.println(requestBuilder);
+//        System.out.println(result.getResponse().getContentAsString());
+//    }
 
 //    @Test
 //    public void deleteComment_ById_Success() throws Exception {
