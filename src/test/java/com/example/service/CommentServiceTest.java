@@ -10,7 +10,6 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
-import com.example.commentsapi.bean.UserBean;
 import com.example.commentsapi.controller.CommentController;
 import com.example.commentsapi.exception.EntityNotFoundException;
 import com.example.commentsapi.model.Comment;
@@ -30,8 +29,6 @@ public class CommentServiceTest {
     @Rule
     public MockitoRule rule = MockitoJUnit.rule();
 
-    @InjectMocks
-    UserBean user;
 
     @InjectMocks
     private Comment comment;
