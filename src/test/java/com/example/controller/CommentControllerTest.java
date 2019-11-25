@@ -1,17 +1,11 @@
 package com.example.controller;
 
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
 
 import com.example.commentsapi.controller.CommentController;
 import com.example.commentsapi.model.Comment;
 import com.example.commentsapi.service.CommentService;
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;

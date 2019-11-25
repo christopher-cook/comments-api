@@ -1,7 +1,5 @@
 package com.example.commentsapi.model;
 
-import com.example.commentsapi.bean.UserBean;
-
 import javax.persistence.*;
 
 @Entity
