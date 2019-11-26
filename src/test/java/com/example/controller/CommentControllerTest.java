@@ -6,6 +6,7 @@ import com.example.commentsapi.model.Comment;
 import com.example.commentsapi.service.CommentService;
 import org.junit.Before;
 import org.junit.Rule;
+import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
@@ -46,6 +47,10 @@ public class CommentControllerTest {
         comment.setCommentId(1L);
         comment.setText("test text");
 
+    }
+    @Test
+    public void fakeTest() {
+        System.out.println("faker");
     }
 
 //    @Test
