@@ -15,6 +15,6 @@ public interface CommentRepository extends CrudRepository<Comment, Long> {
     @Transactional
     @Modifying
     @Query("DELETE FROM Comment c WHERE c.post_id = :post_id")
-    public Long deleteAllByPost_Id(Long post_id);
+    public void deleteAllByPost_Id(Long post_id);
 
 }
