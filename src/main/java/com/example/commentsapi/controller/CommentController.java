@@ -12,11 +12,6 @@ public class CommentController {
     @Autowired
     CommentService commentService;
 
-    @GetMapping("/hello")
-    public String getHello() {
-        return "hello!";
-    }
-
     @PostMapping("/{postId}")
     public Comment createComment(@RequestHeader("userId") String userId, @PathVariable String postId, @RequestBody Comment comment){
         return commentService.createComment(userId, postId, comment);
