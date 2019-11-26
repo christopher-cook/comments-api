@@ -14,6 +14,7 @@ import com.example.commentsapi.controller.CommentController;
 import com.example.commentsapi.exception.EntityNotFoundException;
 import com.example.commentsapi.model.Comment;
 
+import com.example.commentsapi.mq.Receiver;
 import com.example.commentsapi.repository.CommentRepository;
 import com.example.commentsapi.service.CommentServiceImpl;
 import org.junit.Before;
@@ -23,6 +24,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
 
 public class CommentServiceTest {
@@ -36,8 +38,8 @@ public class CommentServiceTest {
     @InjectMocks
     public CommentServiceImpl commentService;
 
-    @Mock
-    CommentController commentController;
+//    @Mock
+//    CommentController commentController;
 
     @Mock
     CommentRepository commentRepository;
@@ -69,10 +71,13 @@ public class CommentServiceTest {
 
     @Test
     public void deleteComm_ById_Success() throws EntityNotFoundException {
+
         commentRepository.deleteById(anyLong());
         Long deletedCommentId = commentService.deleteComment(2L);
 
 //       assertEquals((long)2, (long) deletedCommentId);
+
+
     }
 
 

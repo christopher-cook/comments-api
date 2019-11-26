@@ -1,6 +1,5 @@
 package com.example.controller;
 
-
 import com.example.commentsapi.controller.CommentController;
 import com.example.commentsapi.model.Comment;
 import com.example.commentsapi.service.CommentService;
@@ -10,14 +9,16 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.List;
 
-
+@SpringBootTest
 public class CommentControllerTest {
+
     @Rule
     public MockitoRule rule = MockitoJUnit.rule();
 
