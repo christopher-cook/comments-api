@@ -27,8 +27,8 @@ public class SwaggerConfig {
         .apiInfo(apiEndPointsInfo());
   }
   private ApiInfo apiEndPointsInfo() {
-    return new ApiInfoBuilder().title("comments-api")
-        .description("comments-api")
+    return new ApiInfoBuilder().title("comment-api")
+        .description("comment-api")
         .version("1.0.0")
         .build();
   }
