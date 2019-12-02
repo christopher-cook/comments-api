@@ -1,5 +1,9 @@
 package com.example.commentsapi.bean;
 
+/**
+ * @author Christopher Cook
+ * @author Qin Hzu
+ */
 public class UserBean {
 
     private Long id;
@@ -17,12 +21,17 @@ public class UserBean {
         this.password = password;
     }
 
-    public Long getId() {
-        return id;
-    }
-
+    /**
+     * @param id takes a Long id as input
+     */
     public void setId(Long id) {
         this.id = id;
+    }
+    /**
+     * @return Long id
+     */
+    public Long getId() {
+        return id;
     }
 
     public String getEmail() {

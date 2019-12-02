@@ -1,7 +1,9 @@
 package com.example.commentsapi.model;
 
 import javax.persistence.*;
-
+/**
+ * @author  Christopher Cook
+ */
 @Entity
 @Table(name="comments")
 public class Comment {
