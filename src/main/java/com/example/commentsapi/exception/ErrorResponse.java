@@ -28,10 +28,18 @@ public class ErrorResponse {
         this.message = message;
     }
 
+    /**
+     *
+     * @return cause
+     */
     public String getCause() {
         return cause;
     }
 
+    /**
+     *
+     * @param cause String
+     */
     public void setCause(String cause) {
         this.cause = cause;
     }
@@ -44,6 +52,12 @@ public class ErrorResponse {
         this.timestamp = timestamp;
     }
 
+    /**
+     *
+     * @param httpStatus HttpStatus
+     * @param message String
+     * @param cause String
+     */
     public ErrorResponse(HttpStatus httpStatus, String message, String cause) {
         super();
         this.httpStatus = httpStatus;
