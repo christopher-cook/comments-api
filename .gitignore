@@ -29,3 +29,8 @@ build/
 
 ### VS Code ###
 .vscode/
+### Logs ###
+comments-api.log
+*.gz
+### Prop files ###
+*.properties
